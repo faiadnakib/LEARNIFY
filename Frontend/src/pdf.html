@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnify - PDFs</title>
+    <link rel="stylesheet" href="pdf.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Learnify</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="book.html">Books</a>
+        <a href="pdf.html">PDFs</a>
+        <a href="aboutus.html">About Us</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for topics..." />
+        <button type="button">Search</button>
+      </div>
+      <div class="auth-buttons">
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </header>
+
+    <section class="pdf-section">
+      <h2>Select a PDF to Read</h2>
+      <div class="pdf-list">
+        <button class="pdf-item" data-pdf="pdf1.pdf">Science</button>
+        <button class="pdf-item" data-pdf="pdf1.pdf">Arts & Crafts</button>
+        <button class="pdf-item" data-pdf="pdf3.pdf">Communication</button>
+        <button class="pdf-item" data-pdf="pdf4.pdf">Courses</button>
+      </div>
+      <div id="pdf-viewer" class="pdf-viewer">
+        <embed src="" width="100%" height="600px" id="pdfEmbed" />
+      </div>
+    </section>
+
+    <script src="pdf.js"></script>
+  </body>
+</html>

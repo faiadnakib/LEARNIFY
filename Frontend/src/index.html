@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnify</title>
+    <link rel="stylesheet" href="index.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Learnify</div>
+      <nav class="nav-links">
+        <a href="#">Home</a>
+        <a href="book.html">Books</a>
+        <a href="pdf.html">PDFs</a>
+        <a href="aboutus.html">About Us</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for topics..." />
+        <button type="button">Search</button>
+      </div>
+      <div class="auth-buttons">
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </header>
+
+    <div class="slider-container">
+      <div class="slider">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <div class="slides">
+          <div class="slide">
+            <img src="../images/1.jpg" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="../images/2.jpg" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="../images/3.jpg" alt="Slide 3" />
+          </div>
+          <div class="slide">
+            <img src="../images/4.jpg" alt="Slide 4" />
+          </div>
+        </div>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      </div>
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <div class="container mt-5">
+      <h1 class="select_cat">Select Category you want to learn</h1>
+
+      <!-- Category Blocks -->
+      <div class="row mb-4 text-center">
+        <div class="col-md-4">
+          <div class="category-block" id="science-block">
+            <h4>Science</h4>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-block" id="arts-crafts-block">
+            <h4>Arts & Crafts</h4>
+          </div>
+        </div>
+        <div class="col-md-4">
+          <div class="category-block" id="communication-block">
+            <h4>Communication</h4>
+          </div>
+        </div>
+      </div>
+
+      <!-- Content Sections for Each Category -->
+
+      <!-- Science Section -->
+      <section id="science" class="content-section" style="display: none">
+        <h2 class="text-center mb-4">Science Courses</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="../images/computer.jpg"
+                alt="Computer Science"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Computer Science</h5>
+                <p class="card-text">
+                  Explore the fundamentals of computer science.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="../images/home.jpg"
+                alt="Home Science"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Home Science</h5>
+                <p class="card-text">
+                  Learn the basics of home science and household management.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Arts & Crafts Section -->
+      <section id="arts-crafts" class="content-section" style="display: none">
+        <h2 class="text-center mb-4">Arts & Crafts Courses</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="../images/local.jpg"
+                alt="Local Arts"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Local Arts</h5>
+                <p class="card-text">
+                  Explore traditional art forms from your region.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="../images/techniques.jpg"
+                alt="Techniques"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Techniques</h5>
+                <p class="card-text">
+                  Learn the techniques of painting, sculpture, and more.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Communication Section -->
+      <section id="communication" class="content-section" style="display: none">
+        <h2 class="text-center mb-4">Communication Courses</h2>
+        <div class="row">
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="../images/global.jpg"
+                alt="Global Communication"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Global Communication</h5>
+                <p class="card-text">
+                  Learn how to communicate effectively across cultures.
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="col-md-6 mb-4">
+            <div class="card">
+              <img
+                src="../images/local_com.jpg"
+                alt="Local Communication"
+                class="card-img-top"
+              />
+              <div class="card-body">
+                <h5 class="card-title">Local Communication</h5>
+                <p class="card-text">
+                  Understand how communication works within local communities.
+                </p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </div>
+
+    <script src="index.js"></script>
+  </body>
+</html>

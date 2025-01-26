@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnify</title>
+    <link rel="stylesheet" href="dashboard.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Learnify</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="book.html">Books</a>
+        <a href="#">PDFs</a>
+        <a href="aboutus.html">About Us</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for topics..." />
+        <button type="button">Search</button>
+      </div>
+      <div class="auth-buttons">
+        <!-- Only show these buttons if the user is not logged in -->
+        <a href="login.html" id="loginBtn">Log In</a>
+        <a href="signup.html" id="signupBtn">Sign Up</a>
+      </div>
+    </header>
+
+    <div class="slider-container">
+      <div class="slider">
+        <button class="arrow left" onclick="prevSlide()">&#10094;</button>
+        <div class="slides">
+          <div class="slide">
+            <img src="../images/1.jpg" alt="Slide 1" />
+          </div>
+          <div class="slide">
+            <img src="../images/2.jpg" alt="Slide 2" />
+          </div>
+          <div class="slide">
+            <img src="../images/3.jpg" alt="Slide 3" />
+          </div>
+          <div class="slide">
+            <img src="../images/4.jpg" alt="Slide 4" />
+          </div>
+        </div>
+        <button class="arrow right" onclick="nextSlide()">&#10095;</button>
+      </div>
+      <div class="dots-container">
+        <span class="dot" onclick="currentSlide(0)"></span>
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+      </div>
+    </div>
+
+    <section class="categories">
+      <h2>Explore Our Topics</h2>
+      <div class="categories-container">
+        <div class="category">
+          <p>Science</p>
+        </div>
+        <div class="category">
+          <p>Courses</p>
+        </div>
+        <div class="category">
+          <p>Arts & Crafts</p>
+        </div>
+        <div class="category">
+          <p>Communication</p>
+        </div>
+      </div>
+    </section>
+
+    <script src="dashboard.css"></script>
+  </body>
+</html>

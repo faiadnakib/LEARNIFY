@@ -1,0 +1,116 @@
+/* General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #fffbea;
+  color: #333;
+}
+
+/* Header */
+header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #ffcc00; /* Lighter Yellow shade */
+  padding: 15px 30px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.15);
+  transition: background-color 0.3s ease-in-out;
+}
+
+header:hover {
+  background-color: #ffb300; /* Slightly darker yellow shade */
+}
+
+.logo {
+  font-size: 1.8rem;
+  font-weight: bold;
+  color: #333;
+  letter-spacing: 2px;
+  text-transform: uppercase;
+}
+
+.nav-links a {
+  margin: 0 20px;
+  text-decoration: none;
+  color: #333;
+  font-size: 1.1rem;
+  font-weight: 500;
+  transition: color 0.3s, transform 0.3s;
+}
+
+.nav-links a:hover {
+  color: #fff;
+  transform: scale(1.1);
+  font-weight: 700;
+  text-shadow: 0 0 8px rgba(255, 255, 255, 0.5);
+}
+
+.auth-buttons a {
+  margin-left: 15px;
+  padding: 7px 20px;
+  text-decoration: none;
+  color: #333;
+  background-color: #ffd700; /* Gold */
+  border: 2px solid #ffd700;
+  border-radius: 25px;
+  transition: all 0.3s ease-in-out;
+}
+
+.auth-buttons a:hover {
+  background-color: #333;
+  color: #ffd700;
+  transform: translateY(-3px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+/* PDF Section */
+.pdf-section {
+  text-align: center;
+  margin: 40px 20px;
+}
+
+.pdf-section h2 {
+  font-size: 2rem;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.pdf-list {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+  gap: 20px;
+  padding: 20px;
+}
+
+.pdf-item {
+  background-color: #ffe680;
+  padding: 15px;
+  border-radius: 10px;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+  cursor: pointer;
+  font-size: 1.2rem;
+  font-weight: bold;
+  transition: transform 0.3s;
+}
+
+.pdf-item:hover {
+  transform: scale(1.05);
+  background-color: #ffd700;
+}
+
+.pdf-viewer {
+  margin-top: 30px;
+  padding: 20px;
+  border-radius: 10px;
+  background-color: #fff;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+#pdfEmbed {
+  border: none;
+}

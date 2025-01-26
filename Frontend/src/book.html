@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Learnify - Books</title>
+    <link rel="stylesheet" href="book.css" />
+  </head>
+  <body>
+    <header>
+      <div class="logo">Learnify</div>
+      <nav class="nav-links">
+        <a href="index.html">Home</a>
+        <a href="book.html" class="active">Books</a>
+        <a href="pdf.html">PDFs</a>
+        <a href="aboutus.html">About Us</a>
+      </nav>
+      <div class="search-bar">
+        <input type="text" placeholder="Search for topics..." />
+        <button type="button">Search</button>
+      </div>
+      <div class="auth-buttons">
+        <a href="login.html">Log In</a>
+        <a href="signup.html">Sign Up</a>
+      </div>
+    </header>
+
+    <section class="books-section">
+      <h1>Our Book Collection</h1>
+      <div class="books-container" id="books-container">
+        <!-- Books will be added here dynamically with JavaScript -->
+      </div>
+    </section>
+
+    <script src="book.js"></script>
+  </body>
+</html>

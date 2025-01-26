@@ -1,0 +1,39 @@
+body {
+  background: linear-gradient(
+    to right,
+    #ffea00,
+    #f3ff46,
+    #fffbcb
+  ); /* Gradient background */
+  font-family: "Arial", sans-serif;
+  margin: 0;
+  padding: 0;
+}
+
+.signup-card {
+  max-width: 450px;
+  background: #fff;
+}
+
+.signup-card h2 {
+  font-weight: bold;
+  color: #0077ff;
+}
+
+.btn-primary {
+  background: #7f00ff;
+  border: none;
+}
+
+.btn-primary:hover {
+  background: #e100ff;
+}
+
+a {
+  color: #7f00ff;
+}
+
+a:hover {
+  color: #e100ff;
+  text-decoration: underline;
+}
